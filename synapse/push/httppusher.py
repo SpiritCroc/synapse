@@ -534,6 +534,10 @@ class HttpPusher(Pusher):
         Args:
             badge: number of unread messages
         """
+
+        # SC disable
+        return
+
         logger.debug("Sending updated badge count %d to %s", badge, self.name)
         d = {
             "notification": {
